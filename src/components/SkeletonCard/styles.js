@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const SkeletonContent = styled.div`
+  @media (max-width: 920px) {
+    padding: 2rem;
+  }
+`
+
 export const Container = styled.div`
   width: 100%;
   padding: 32px;
@@ -11,6 +17,12 @@ export const Container = styled.div`
   max-width: 864px;
   margin: 0 auto;
   display: flex;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 `
 
 export const Profile = styled.div`
@@ -57,12 +69,29 @@ export const ProfileInfo = styled.div`
     align-items: center;
     color: rgb(175, 194, 212);
   }
+
+  @media (max-width: 650px) {
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 360px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+  }
 `
 
 export const Content = styled.div`
   width: 100%;
   max-width: 864px;
   margin: 0 auto;
+
+  @media (max-width: 920px) {
+    padding: 2rem;
+  }
 `
 
 export const Repositories = styled.div`
@@ -89,6 +118,10 @@ export const RepoList = styled.div`
   grid-auto-rows: min-content;
   gap: 32px;
   margin-top: 28px;
+
+  @media (max-width: 510px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `
 
 export const Repo = styled.div`

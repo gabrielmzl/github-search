@@ -1,10 +1,9 @@
-import { Book, Star, Users } from "phosphor-react";
 import Skeleton from "react-loading-skeleton";
-import { Container, Content, Profile, ProfileInfo, Repo, RepoList, Repositories } from "./styles";
+import { Container, Content, Profile, Repo, RepoList, Repositories, SkeletonContent } from "./styles";
 
 export function SkeletonCard() {
   return (
-    <>
+    <SkeletonContent>
       <Container>
         <Skeleton width={148} height={148} />
 
@@ -56,6 +55,6 @@ export function SkeletonCard() {
           </RepoList>
         </Repositories>
       </Content>
-    </>
+    </SkeletonContent>
   )
 }
