@@ -6,6 +6,10 @@ export const Container = styled.header`
   background: url('/left-header-image.svg') left center no-repeat, url('/right-header-image.svg') right center no-repeat;
   position: relative;
   overflow: hidden;
+
+  @media (max-width: 920px) {
+    padding: 2rem;
+  }
 `
 
 export const ShadowRight = styled.div`

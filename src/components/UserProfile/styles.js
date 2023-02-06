@@ -11,6 +11,12 @@ export const Container = styled.div`
   max-width: 864px;
   margin: 0 auto;
   display: flex;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 `
 
 export const Avatar = styled.img`
@@ -18,6 +24,11 @@ export const Avatar = styled.img`
   height: 148px;
   border-radius: 8px;
   margin-right: 32px;
+
+  @media (max-width: 650px) {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
 `
 
 export const Profile = styled.div`
@@ -62,5 +73,18 @@ export const ProfileInfo = styled.div`
     gap: 0.3rem;
     align-items: center;
     color: rgb(175, 194, 212);
+  }
+
+  @media (max-width: 650px) {
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 360px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
   }
 `

@@ -5,6 +5,10 @@ export const Container = styled.div`
   max-width: 864px;
   margin: 0 auto;
   margin-bottom: 5rem;
+
+  @media (max-width: 920px) {
+    padding: 2rem;
+  }
 `
 
 export const Repositories = styled.div`
@@ -32,6 +36,10 @@ export const RepoList = styled.div`
   gap: 32px;
   margin-top: 28px;
   padding-bottom: 105px;
+
+  @media (max-width: 510px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `
 
 export const Repo = styled.div`

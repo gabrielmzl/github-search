@@ -6,6 +6,11 @@ export const Container = styled.footer`
   left: 0;
   bottom: 0;
   background: rgb(11, 27, 43);
+
+  @media (max-width: 920px) {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
 `
 
 export const Content = styled.div`
@@ -28,5 +33,9 @@ export const Content = styled.div`
 
   p {
     color: rgb(123, 150, 178);
+  }
+
+  @media (max-width: 380px) {
+    flex-direction: column;
   }
 ` 

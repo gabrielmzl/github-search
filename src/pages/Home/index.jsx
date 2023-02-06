@@ -5,14 +5,14 @@ import { Header } from "../../components/Header";
 import { SkeletonCard } from "../../components/SkeletonCard";
 import { User } from "../../components/User";
 import { GithubContext } from "../../context/GithubContext";
-import { Error } from "./styles";
+import { Container } from "./styles";
 
 export function Home() {
 
   const { user, isLoading, error } = useContext(GithubContext);
 
   return (
-    <>
+    <Container>
       <Header />
 
       <main>
@@ -24,6 +24,6 @@ export function Home() {
       </main>
 
       <Footer />
-    </>
+    </Container>
   )
 }
