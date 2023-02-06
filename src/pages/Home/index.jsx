@@ -16,13 +16,11 @@ export function Home() {
       <Header />
 
       <main>
-        {/* {isLoading ? (
+        {isLoading ? (
           <SkeletonCard />
         ) : (
           user && !error && <User />
-        )} */}
-
-        <SkeletonCard />
+        )}
       </main>
 
       <Footer />
