@@ -21,7 +21,7 @@ export function Header() {
       <Content>
         <Title>Github Search</Title>
         <InputWrapper>
-          <Input placeholder="Digite aqui o nome de usuário do Github..." onChange={(e) => { setUser(e.target.value), console.log(user) }} />
+          <Input placeholder="Digite aqui o nome de usuário do Github..." onChange={(e) => { setUser(e.target.value) }} />
           <Button onClick={() => { submitUser(user) }}>
             <SearchIcon src="./search.svg" />
           </Button>
