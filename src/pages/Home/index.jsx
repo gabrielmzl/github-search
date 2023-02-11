@@ -9,7 +9,7 @@ import { Container } from "./styles";
 
 export function Home() {
 
-  const { user, isLoading, error } = useContext(GithubContext);
+  const { user, isLoading } = useContext(GithubContext);
 
   return (
     <Container>
@@ -19,7 +19,7 @@ export function Home() {
         {isLoading ? (
           <SkeletonCard />
         ) : (
-          user && !error && <User />
+          user && <User />
         )}
       </main>
 

@@ -13,6 +13,10 @@
 
   --family-normal: Nunito, sans-serif;
   --family-bold: Nunito, sans-serif;
+
+  --toastify-color-dark: #081726;
+  --toastify-text-color-dark: rgb(177, 201, 228);
+  --toastify-color-error: #a0544c;
 }
 
 :where(html) {
