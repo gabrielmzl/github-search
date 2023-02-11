@@ -1,7 +1,7 @@
 import { Book, Users } from "phosphor-react";
 import { Avatar, Container, Profile, ProfileInfo } from "./styles";
 
-export function UserProfile({ avatar, name, bio, blog, followers, public_repos}) {
+export function UserProfile({ avatar, name, login, bio, blog, followers, public_repos}) {
   return (
     <Container>
       <Avatar src={avatar} />

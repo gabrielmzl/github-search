@@ -10,7 +10,7 @@ export function User() {
 
   return (
     <Container>
-      <UserProfile avatar={user.avatar_url} name={user.name} bio={user.bio} blog={user.blog} followers={user.followers} public_repos={user.public_repos} />
+      <UserProfile avatar={user.avatar_url} name={user.name || user.login} bio={user.bio} blog={user.blog} followers={user.followers} public_repos={user.public_repos} />
 
       <Repositories>
         <span>
